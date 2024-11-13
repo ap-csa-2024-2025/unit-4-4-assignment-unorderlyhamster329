@@ -28,6 +28,21 @@ public class Main
       replace += letter;
     }
     System.out.println(replace);
+
+
+    //problem 3
+
+    String s1 = "balloon";
+    String s2 = "atrophy";
+    String output = "";
+
+    if (s1.length() == s2.length()) {
+      for (int i = s2.length() - 1; i >= 0; i--) {
+        String L1 = s1.substring(i, i+1);
+        String L2 = s2.substring(i, i+1);
+        output += (L2 + L1);
+      }
+    }
   }
 
   
